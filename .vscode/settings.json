@@ -1,0 +1,17 @@
+{
+  "liveSassCompile.settings.formats": [{
+    "format": "expanded",
+    "extensionName": ".css",
+    "savePath": "/assets/style",
+    "sourceMap": false
+  }],
+  "liveSassCompile.settings.rootIsWorkspace": true,
+  "liveSassCompile.settings.generateMap": false,
+  "liveSassCompile.settings.autoprefix": [],
+  "liveSassCompile.settings.includeItems": [
+    "scss/common/common.scss",
+    "scss/main/main.scss",
+    "scss/price/price.scss",
+    "scss/qa/qa.scss"
+  ]
+}

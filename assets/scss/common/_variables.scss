@@ -1,0 +1,73 @@
+// 変数定義
+
+//-----------------------------------
+//Font
+//------------------------------------
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap");
+
+
+// Font Family
+$f-main: 'Noto Sans JP', sans-serif;
+
+
+//-----------------------------------
+//Color
+//-----------------------------------
+$c-black: #000;
+$c-l-black: #222;
+$c-green: #09947b;
+$c-d-green: #168352;
+$c-brown: #473221;
+$c-hover-green: #066655;
+
+//base
+$c-main: #fff;
+
+//button
+$c-btn-bg: $c-green;
+
+//title
+$c--title-en: #168352;
+
+
+//-----------------------------------
+//Break Point
+//-----------------------------------
+$breakpoints: (
+    sp: 'screen and (max-width: 767px)',
+    pc: 'screen and (min-width: 768px)',
+);
+
+
+//-----------------------------------
+//Base Width
+//-----------------------------------
+$base-width-sp: 390px;
+$base-width-pc: 1400px;
+
+//-----------------------------------
+//Contents Width
+//-----------------------------------
+$width-main: 1100px;
+$width-wide: 1200px;
+$width-narrow: 960px;
+
+
+//-----------------------------------
+//font
+//-----------------------------------
+
+$font-sp: 15px;
+$font-pc: 15px;
+
+$font-title-en-sp: 16px;
+$font-title-en-pc: 20px;
+$font-title-ja-sp: 20px;
+$font-title-ja-pc: 28px;
+
+//-----------------------------------
+//border-radius
+//-----------------------------------
+
+$bradius-main: 24px;
