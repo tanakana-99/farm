@@ -9,9 +9,8 @@
   "liveSassCompile.settings.generateMap": false,
   "liveSassCompile.settings.autoprefix": [],
   "liveSassCompile.settings.includeItems": [
-    "scss/common/common.scss",
-    "scss/main/main.scss",
-    "scss/price/price.scss",
-    "scss/qa/qa.scss"
+    "scss/index.scss",
+    "scss/price.scss",
+    "scss/qa.scss"
   ]
 }
