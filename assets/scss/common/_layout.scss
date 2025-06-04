@@ -10,6 +10,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #000;
 
     &:hover {
         opacity: 0.7;
@@ -46,7 +47,7 @@ li {
 
     .container-narrow {
         width: 100%;
-        max-width: 960px;
+        max-width: 1100px;
         margin: 0 auto;
     }
 
