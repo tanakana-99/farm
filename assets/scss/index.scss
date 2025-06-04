@@ -3,3 +3,225 @@
 @use '../scss/common/mixin' as m;
 
 
+.burger-menu {
+    display: flex;
+    top: 70px;
+    left: 0;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s;
+
+    @include m.mq(pc) {
+        visibility: visible;
+        font-size: 16px;
+        font-weight: bold;
+        opacity: 1;
+        // width: 380px;
+        // column-gap: 40px;
+    }
+
+    a {
+        color: #fff;
+
+        @include m.mq(pc) {
+            color: #333;
+        }
+    }
+
+    &-active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+
+    &__btn {
+        position: absolute;
+        right: 2%;
+        top: 23px;
+        display: block;
+        width: 24px;
+        height: 18px;
+        text-align: center;
+
+
+        @include m.mq(pc) {
+            display: none;
+        }
+    }
+
+    &__bar {
+        display: block;
+        width: 24px;
+        height: 2px;
+        margin: 0 auto;
+        background-color: #000;
+    }
+
+    &__bar:not(:last-child) {
+        margin-bottom: 5px;
+    }
+
+    &__list {
+        padding-left: 12px;
+
+        @include m.mq(pc) {
+            display: flex;
+        }
+
+        li {
+            padding: 10px 0 15px;
+            font-size: 18px;
+            font-weight: 500;
+            color: #fff;
+            text-align: start;
+            border-bottom: 1px solid #fff;
+
+            @include m.mq(pc) {
+                padding: 0;
+                font-size: 16px;
+                font-weight: bold;
+                letter-spacing: 1.8px;
+            }
+        }
+    }
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 0 3.846% 0 3.333%;
+
+    @include m.mq(pc) {
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 63px;
+
+        @include m.mq(pc) {
+            justify-content: space-between;
+            width: 84%;
+            margin: 0 auto;
+        }
+    }
+
+    &_logo_pc {
+        vertical-align: middle;
+    }
+}
+
+.mv {
+    @include m.mq(pc) {
+        width: 100%;
+        max-width: 1176px;
+        margin: 0 auto;
+    }
+
+    &__inner {
+        margin-top: 91px;
+
+        @include m.mq(pc) {
+            margin: 91px auto 0;
+            max-width: 1100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__title {
+        font-size: 28px;
+        font-weight: bold;
+
+        @include m.mq(pc) {
+            font-size: 40px;
+        }
+    }
+
+    &__text {
+        font-size: 15px;
+
+        @include m.mq(pc) {
+            max-width: 540px;
+        }
+    }
+
+    &__image {
+        text-align: center;
+    }
+}
+
+.title-en {
+    color: v.$c--title-en;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+
+    @include m.mq(pc) {
+        font-size: 20px;
+    }
+}
+
+.title-ja {
+    font-size: 20px;
+    font-weight: bold;
+
+    @include m.mq(pc) {
+        font-size: 28px;
+    }
+}
+
+.section__title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about {
+
+    @include m.full-bleed;
+
+    &__box {
+        display: grid;
+        place-items: center;
+        background-image: url('../assets/images/top/index_about_pc_01.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 584px;
+        position: relative;
+        /* これがあると子のabsoluteも効く */
+    }
+
+    &__inner {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 16px;
+        border-radius: 20px;
+        box-shadow: 0 0 24px rgba(0, 0, 0, 0.25);
+        max-width: 360px;
+        width: 100%;
+        position: absolute;
+    }
+
+    &__text {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 10px;
+        line-height: 1;
+
+        @include m.mq(pc) {
+            font-size: 20px;
+        }
+    }
+}
