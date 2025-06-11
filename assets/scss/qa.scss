@@ -1,3 +1,337 @@
 @use '../scss/common/variables' as v;
 @use '../scss/common/layout' as *;
 @use '../scss/common/mixin' as m;
+
+
+
+.burger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 58px;
+    left: 3.333%;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s;
+    background-color: v.$c-green;
+    height: 210px;
+    border-radius: 24px;
+    width: 91.7948%;
+    text-align: center;
+
+
+    @include m.mq(pc) {
+        visibility: visible;
+        font-size: 16px;
+        font-weight: bold;
+        opacity: 1;
+        position: static;
+        background-color: #fff;
+        justify-content: flex-end;
+        height: auto;
+    }
+
+    a {
+        color: #fff;
+
+        @include m.mq(pc) {
+            color: #000;
+        }
+    }
+
+    &-active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+
+    &__btn {
+        position: absolute;
+        right: 4%;
+        top: 23px;
+        display: block;
+        width: 24px;
+        height: 18px;
+        text-align: center;
+
+
+        @include m.mq(pc) {
+            display: none;
+        }
+    }
+
+    &__bar {
+        display: block;
+        width: 24px;
+        height: 2px;
+        margin: 0 auto;
+        background-color: #000;
+    }
+
+    &__bar:not(:last-child) {
+        margin-bottom: 5px;
+    }
+
+    &__list {
+
+        @include m.mq(pc) {
+            display: flex;
+            column-gap: 40px;
+        }
+
+        li {
+            padding: 10px 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+
+            @include m.mq(pc) {
+                padding: 0;
+                font-size: 16px;
+                font-weight: bold;
+                letter-spacing: 1.8px;
+            }
+        }
+    }
+}
+
+.burger-menu a.mv__btn-qa {
+    @include m.mq(pc) {
+        color: v.$c-d-green;
+    }
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 0 2.846% 0 4.333%;
+    z-index: 1;
+
+    @include m.mq(pc) {
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 53px;
+
+        @include m.mq(pc) {
+            justify-content: space-between;
+            width: 84%;
+            margin: 0 auto;
+        }
+    }
+
+    &_logo_pc {
+        vertical-align: middle;
+    }
+
+}
+
+.nav-top {
+    display: block;
+
+    @include m.mq(pc) {
+        display: none;
+    }
+}
+
+.mv {
+
+    &__qa {
+        padding: 0 3.846% 0 3.333%;
+
+        @include m.mq(pc) {
+            margin: 0 auto;
+            max-width: 1200px;
+            position: relative;
+        }
+    }
+
+    &__image {
+        margin-top: 81px;
+    }
+
+    &_top_pc {
+        width: 100%;
+
+        @include m.mq(pc) {
+            max-width: 100%;
+        }
+    }
+}
+
+.qa__title {
+    text-align: start;
+}
+
+.info {
+    padding-right: 3.8%;
+    text-align: end;
+    margin-bottom: 36px;
+    font-size: 12px;
+    letter-spacing: 0.2px;
+
+    @include m.mq(pc) {
+        margin: 24px auto 40px;
+        max-width: 1200px;
+    }
+
+    &-arrow {
+        margin-left: 5.6px;
+    }
+}
+
+.qa {
+    padding: 0 3.846% 0 4.333%;
+    padding-bottom: 15px;
+    margin-bottom: 140px;
+
+    &__title {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 17px 0 16px;
+
+        @include m.mq(pc) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 327px;
+            height: 113px;
+            background-color: #fff;
+            border-radius: 0 40px 0 0;
+            font-size: 36px;
+            margin: 0;
+        }
+    }
+
+    &__box {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    &__label {
+        color: v.$c-d-green;
+        font-size: 11px;
+        border: solid 1px v.$c-d-green;
+        border-radius: 4px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 24px;
+        margin-top: 9px;
+    }
+
+    &__item {
+        border: solid 1px #ccc;
+        border-radius: 16px;
+        margin-bottom: 25px;
+        line-height: 1.75;
+        line-break: anywhere;
+    }
+
+    &__question {
+        line-height: 1.5;
+    }
+
+
+    &__icon {
+        font-size: 23px;
+        margin-right: 22px;
+        margin-top: 18px;
+    }
+
+    &__answer {
+        padding-left: 24px;
+        padding-right: 25px;
+        padding-bottom: 15px;
+        letter-spacing: 0.1px;
+    }
+}
+
+.label-flex {
+    display: flex;
+    column-gap: 8px;
+}
+
+.q-mark {
+    margin-right: 17px;
+}
+
+.q-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 22px;
+    margin-bottom: -2px;
+}
+
+.mark-q {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    color: v.$c-d-green;
+    margin-top: 13px;
+    display: flex;
+}
+
+.accrdion-q {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 64px;
+    padding-right: 61px;
+    padding-bottom: 7px;
+
+    @include m.mq(pc) {
+        font-size: 18px;
+    }
+}
+
+.accrdion-a {
+    font-size: 16px;
+}
+
+
+.footer {
+    &__inner {
+        background-color: v.$c-d-green;
+        height: 68px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        @include m.mq(pc) {
+            height: 96px;
+        }
+    }
+
+    &__list {
+        font-size: 13px;
+        color: #fff;
+
+        & a {
+            color: #fff;
+        }
+
+        @include m.mq(pc) {
+            font-size: 15px;
+        }
+    }
+}

@@ -1,43 +1,263 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>持続可能な未来農業を実現 | Kirameki Farm</title>
-    <meta name="description"
-        content="Kirameki Farmは革新的な農業機器とビッグデータ、自動運転のロボット、リジェネラティブ農業を駆使して持続可能な農業を目指すイノベーション企業です。次世代の子どもたちに環境に優しい未来農業を残すために、効率化と環境配慮を融合した活動を推進しています。">
-    <meta property="og:title" content="持続可能な未来農業を実現 | Kirameki Farm">
-    <meta property="og:description"
-        content="Kirameki Farmは革新的な農業機器とビッグデータ、自動運転のロボット、リジェネラティブ農業を駆使して持続可能な農業を目指すイノベーション企業です。次世代の子どもたちに環境に優しい未来農業を残すために、効率化と環境配慮を融合した活動を推進しています。">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://example.com/faq/">
-    <meta property="og:site_name" content="Kirameki Farm">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>持続可能な未来農業を実現 | Kirameki Farm</title>
+        <meta name="description"
+            content="Kirameki Farmは革新的な農業機器とビッグデータ、自動運転のロボット、リジェネラティブ農業を駆使して持続可能な農業を目指すイノベーション企業です。次世代の子どもたちに環境に優しい未来農業を残すために、効率化と環境配慮を融合した活動を推進しています。">
+        <meta property="og:title" content="持続可能な未来農業を実現 | Kirameki Farm">
+        <meta property="og:description"
+            content="Kirameki Farmは革新的な農業機器とビッグデータ、自動運転のロボット、リジェネラティブ農業を駆使して持続可能な農業を目指すイノベーション企業です。次世代の子どもたちに環境に優しい未来農業を残すために、効率化と環境配慮を融合した活動を推進しています。">
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="https://example.com/faq/">
+        <meta property="og:site_name" content="Kirameki Farm">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
-        rel="stylesheet">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+            rel="stylesheet">
 
-    <!-- リセットCSS -->
-    <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <!-- リセットCSS -->
+        <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
-    <link rel="stylesheet" href="./assets/style/qa.css">
+        <!-- Slick -->
+        <link href="https://cdn.jsdelivr.net/npm/jquery-smarttab@4/dist/css/smart_tab_all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-</head>
+        <link rel="stylesheet" href="./assets/style/qa.css">
 
-<body>
+    </head>
 
+    <body>
+        <header class="header">
+            <div class="header__inner">
+                <h1 class="header__title">
+                    <a href="/">
+                        <picture>
+                            <source class="header_logo_sp" media="(max-width: 767px)" srcset="./assets/image/top/mv_header_logo_sp_01.png">
+                            <img class="header_logo_pc" src="./assets/image/top/mv_header_logo_pc_01.png" alt="Kirameki Farm">
+                        </picture>
+                    </a>
+                </h1>
+                <button type="button" class="burger-menu__btn">
+                    <span class="burger-menu__bar"></span>
+                    <span class="burger-menu__bar"></span>
+                    <span class="burger-menu__bar"></span>
+                </button>
 
+                <nav class="burger-menu">
+                    <ul class="burger-menu__list header__nav">
+                        <li class="nav-top"><a href="/top" class="mv__btn">トップ</a></li>
+                        <li><a href="/price" class="mv__btn-price">価格・スペック</a></li>
+                        <li><a href="/faq" class="mv__btn-qa">よくあるご質問</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <main>
+            <div class="mv__qa">
+                <div class="mv__image">
+                    <picture>
+                        <source class="mv_top_sp" media="(max-width: 767px)" srcset="./assets/image/qa/mv_qa_sp_01.jpg">
+                        <img class="mv_top_pc" src="./assets/image/qa/mv_qa_pc_01.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="qa__top">
+                    <h2 class="qa__title">よくあるご質問</h2>
+                </div>
+            </div>
+            <div class="info">
+                <span>トップ</span><span class="info-arrow"><i class="bi bi-chevron-right"></i></span><span>よくあるご質問</span>
+            </div>
 
-    <script src="./assets/script/main.js"></script>
-</body>
+            <div class="qa">
+                <div class="qa__container">
+                    <div class="qa__box">
+                        <div class="qa__item">
+                            <div class="qa__question">
+                                <div class="q-top">
+                                    <div class="mark-q"><span class="q-mark">Q.</span><span class="qa__label">ご利用について</span></div>
+                                    <div class="qa__icon bi-plus-lg"></div>
+                                </div>
+                                <div class="accrdion-q">農業用ドローンの主な用途は何ですか？</div>
+                            </div>
+                            <div class="qa__answer">
+                                <div class="accrdion-a">
+                                    農業用ドローンは、作物の健康状態のモニタリング、除草剤・肥料等の散布、灌漑システムの管理など、農業生産の効率を向上させるために使用されます。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qa__item">
+                            <div class="qa__question">
+                                <div class="q-top">
+                                    <div class="mark-q"><span class="q-mark">Q.</span><div class="label-flex"><span class="qa__label">ご利用について</span><span class="qa__label">製品について</span></div></div>
+                                    <div class="qa__icon bi-plus-lg"></div>
+                                </div>
+                                <div class="accrdion-q">農業用ドローンの導入による主な利点は何ですか？</div>
+                            </div>
+                            <div class="qa__answer">
+                                <div class="accrdion-a">
+                                    農業用ドローンの導入により、労働力を削減し作業効率を向上させることができます。また、病害虫の早期発見や適切な散布が可能となり、生産性や質を向上させることができます。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qa__item">
+                            <div class="qa__question">
+                                <div class="q-top">
+                                    <div class="mark-q"><span class="q-mark">Q.</span><div class="label-flex"><span class="qa__label">ご利用について</span><span class="qa__label">製品について</span></div></div>
+                                    <div class="qa__icon bi-plus-lg"></div>
+                                </div>
+                                <div class="accrdion-q">農業用ドローンの種類は？</div>
+                            </div>
+                            <div class="qa__answer">
+                                <div class="accrdion-a">
+                                    フィックスウィング（固定翼）ドローン、ロータリーウィング（回転翼）ドローン、および、マルチコプター（複数のプロペラを持つ）ドローンがあります。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qa__item">
+                            <div class="qa__question">
+                                <div class="q-top">
+                                    <div class="mark-q"><span class="q-mark">Q.</span><div class="label-flex"><span class="qa__label">ご利用について</span><span class="qa__label">使用について</span></div></div>
+                                    <div class="qa__icon bi-plus-lg"></div>
+                                </div>
+                                <div class="accrdion-q">農業用ドローンの価格はどのくらいですか？</div>
+                            </div>
+                            <div class="qa__answer">
+                                <div class="accrdion-a">
+                                    ドローンの種類、性能、機能によって価格は異なりますが、一般的には数万円から数百万円の範囲で販売されています。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qa__item">
+                            <div class="qa__question">
+                                <div class="q-top">
+                                    <div class="mark-q"><span class="q-mark">Q.</span><span class="qa__label">製品について</span></div>
+                                    <div class="qa__icon bi-plus-lg"></div>
+                                </div>
+                                <div class="accrdion-q">特別な免許や資格は必要ですか？</div>
+                            </div>
+                            <div class="qa__answer">
+                                <div class="accrdion-a">
+                                    農業用ドローンの操縦には、国によって異なるが、無人航空機操縦士免許やドローン操縦資格が必要とされる場合があります。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qa__item">
+                            <div class="qa__question">
+                                <div class="q-top">
+                                    <div class="mark-q"><span class="q-mark">Q.</span><span class="qa__label">使用について</span></div>
+                                    <div class="qa__icon bi-plus-lg"></div>
+                                </div>
+                                <div class="accrdion-q">農業用ドローンの法規制は何ですか？</div>
+                            </div>
+                            <div class="qa__answer">
+                                <div class="accrdion-a">
+                                    国や地域によって異なりますが、一般的には飛行高度、飛行速度、操縦者とドローンの距離、人口密集地や空港周辺の飛行に関する制限が設けられています。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qa__item">
+                            <div class="qa__question">
+                                <div class="q-top">
+                                    <div class="mark-q"><span class="q-mark">Q.</span><span class="qa__label">製品について</span></div>
+                                    <div class="qa__icon bi-plus-lg"></div>
+                                </div>
+                                <div class="accrdion-q">農業用ドローンのバッテリー寿命は？</div>
+                            </div>
+                            <div class="qa__answer">
+                                <div class="accrdion-a">
+                                    ドローンの種類やバッテリー容量によって異なりますが、一般的には約20分から60分の飛行時間があります。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qa__item">
+                            <div class="qa__question">
+                                <div class="q-top">
+                                    <div class="mark-q"><span class="q-mark">Q.</span><div class="label-flex"><span class="qa__label">使用について</span><span class="qa__label">製品について</span></div></div>
+                                    <div class="qa__icon bi-plus-lg"></div>
+                                </div>
+                                <div class="accrdion-q">散布する薬剤や肥料の量はどのように制御されますか？</div>
+                            </div>
+                            <div class="qa__answer">
+                                <div class="accrdion-a">
+                                    農業用ドローンには、散布量を制御するためのシステムが搭載されており、必要な量を正確に散布できます。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qa__item">
+                            <div class="qa__question">
+                                <div class="q-top">
+                                    <div class="mark-q"><span class="q-mark">Q.</span><span class="qa__label">製品について</span></div>
+                                    <div class="qa__icon bi-plus-lg"></div>
+                                </div>
+                                <div class="accrdion-q">データ収集や解析にはどのようなソフトウェアが使用されますか？</div>
+                            </div>
+                            <div class="qa__answer">
+                                <div class="accrdion-a">
+                                    農業用ドローンのデータ収集や解析には、専用のソフトウェアが使用されます。これにより、作物の健康状態や生育状況を詳細に分析することができます。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qa__item">
+                            <div class="qa__question">
+                                <div class="q-top">
+                                    <div class="mark-q"><span class="q-mark">Q.</span><div class="label-flex"><span class="qa__label">使用について</span><span class="qa__label">製品について</span></div></div>
+                                    <div class="qa__icon bi-plus-lg"></div>
+                                </div>
+                                <div class="accrdion-q">農業用ドローンはどのような気象条件で飛行できますか？</div>
+                            </div>
+                            <div class="qa__answer">
+                                <div class="accrdion-a">
+                                    雨や強風の条件下では飛行が困難だったり安全上の問題が発生することがあります。ドローンの性能や設計によって対応できる気象条件は異なります。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qa__item">
+                            <div class="qa__question">
+                                <div class="q-top">
+                                    <div class="mark-q"><span class="q-mark">Q.</span><div class="label-flex"><span class="qa__label">ご利用について</span><span class="qa__label">製品について</span></div></div>
+                                    <div class="qa__icon bi-plus-lg"></div>
+                                </div>
+                                <div class="accrdion-q">農業用ドローンのメンテナンスには何が必要ですか？</div>
+                            </div>
+                            <div class="qa__answer">
+                                <div class="accrdion-a">
+                                    ドローンの定期点検や部品の交換、ソフトウェアのアップデートなどが必要となります。メンテナンスは専門業者やメーカーに依頼することもできます。
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__inner container-wide">
+                <div class="footer__nav">
+                    <div class="footer__list">
+                        <a href="/price">価格・スペック</a><span> ｜ </span><a href="/faq">よくあるご質問</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <!-- waypoints -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+            integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./assets/script/main.js"></script>
+    </body>
 
 </html>
