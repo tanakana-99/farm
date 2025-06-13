@@ -123,7 +123,6 @@
 
         @include m.mq(pc) {
             justify-content: space-between;
-            // width: 83%;
             margin: 0 auto;
             max-width: 1176px;
         }
@@ -563,14 +562,10 @@
         @include m.mq(pc) {
             font-size: 24px;
             text-align: left;
+            position: relative;
         }
     }
 
-    &__name-01:hover {
-        @include m.mq(pc) {
-            color: v.$c-d-green;
-        }
-    }
 
     &__name-02 {
         display: block;
@@ -596,6 +591,23 @@
                 padding: 16px;
                 text-align: center;
             }
+        }
+    }
+
+    .intro__item-01:hover .intro__name-01::before {
+        @include m.mq(pc) {
+            content: 'ロボット技術';
+            position: absolute;
+            inset: 0;
+            color: v.$c-d-green; // ← 表示する文字の色
+            display: flex;
+            align-items: center; // 高さ中央揃え（必要なら）
+        }
+    }
+
+    .intro__item-01:hover .intro__name-01 {
+        @include m.mq(pc) {
+            color: transparent;
         }
     }
 

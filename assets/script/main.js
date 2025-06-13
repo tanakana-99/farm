@@ -9,16 +9,7 @@ $(window).on('resize', function () {
     hamburger.removeClass('burger-menu-active');
 });
 
-// アコーディオンメニュー
-// $(document).ready(function () {
-//     $('.qa__answer').hide();
 
-//     $('.qa__item').on('click', function () {
-//         var content = $(this).find('.qa__answer');
-//         $(this).toggleClass('open');
-//         content.slideToggle();
-//     });
-// });
 
 $(document).ready(function () {
     $('.qa__answer').hide();
@@ -39,18 +30,7 @@ $(document).ready(function () {
     });
 });
 
-// // カルーセル
-// $(document).ready(function () {
-//     $('.gallery__box').slick({
-//         slidesToShow: 1, // 一度に表示するスライド数
-//         slidesToScroll: 1, // 一度にスライドする数
-//         infinite: false, // ループ再生する
-//         dots: true, // ドットナビゲーションを表示
-//         arrows: false, // 前後の矢印を表示（不要なら false）
-//         autoplay: false // 自動再生（必要に応じて true に）
-//     });
-// });
-
+// カルーセル
 if (!$('.gallery__box').hasClass('slick-initialized')) {
     $('.gallery__box').slick({
         slidesToShow: 1,
@@ -62,15 +42,14 @@ if (!$('.gallery__box').hasClass('slick-initialized')) {
     });
 }
 
-
-
-$('.intro__name-01').hover(
-    function () {
-        // マウスが乗ったとき
-        $(this).text('ロボット技術');
-    },
-    function () {
-        // マウスが離れたとき
-        $(this).text('エネルギーセイバー農業ドローン');
-    }
-);
+// // ホバー切り替え
+// $('.intro__name-01').hover(
+//     function () {
+//         // マウスが乗ったとき
+//         $(this).text('ロボット技術');
+//     },
+//     function () {
+//         // マウスが離れたとき
+//         $(this).text('エネルギーセイバー農業ドローン');
+//     }
+// );

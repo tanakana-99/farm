@@ -259,7 +259,6 @@
         align-items: center;
         justify-content: center;
         height: 24px;
-        outline: 1px solid orange;
         line-height: 1;
     }
 
@@ -267,9 +266,7 @@
         border: solid 1px #ccc;
         border-radius: 16px;
         margin-bottom: 24.3px;
-        // line-height: 1.75;
         line-break: anywhere;
-        outline: 1px solid red;
 
         @include m.mq(pc) {
             margin-bottom: 26.4px;
@@ -351,12 +348,9 @@
     font-family: Montserrat, sans-serif;
     color: v.$c-d-green;
     display: flex;
-    outline: 1px dashed blue;
     display: flex;
     align-items: flex-start;
-    /* ← 中央揃えにする */
     min-height: 24px;
-    /* ← 高さを確保してズレを防ぐ */
 
     @include m.mq(pc) {
         margin-top: 0;
@@ -367,7 +361,7 @@
     font-size: 16px;
     font-weight: bold;
     margin: 0 auto;
-    max-width: 63%; // ← 18% + 19% の代わり
+    max-width: 63%;
     line-height: 1.75;
 
     @include m.mq(pc) {

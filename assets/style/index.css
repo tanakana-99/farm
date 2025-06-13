@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap");
 body {
   overflow-x: hidden;
@@ -587,11 +588,7 @@ li {
   .intro__name-01 {
     font-size: 24px;
     text-align: left;
-  }
-}
-@media screen and (min-width: 768px) {
-  .intro__name-01:hover {
-    color: #168352;
+    position: relative;
   }
 }
 .intro__name-02 {
@@ -618,6 +615,21 @@ li {
     width: 47.727%;
     padding: 16px;
     text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .intro .intro__item-01:hover .intro__name-01::before {
+    content: "ロボット技術";
+    position: absolute;
+    inset: 0;
+    color: #168352;
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .intro .intro__item-01:hover .intro__name-01 {
+    color: transparent;
   }
 }
 .intro__row-small {

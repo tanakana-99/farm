@@ -273,7 +273,6 @@
     }
 }
 
-/* ドット全体の配置 */
 .slick-dots {
     display: flex;
     justify-content: center;
@@ -285,7 +284,6 @@
     bottom: -3px;
 }
 
-/* 各ドットのデザイン */
 .slick-dots li {
     display: inline-block;
     margin: 2px;
@@ -293,10 +291,9 @@
     height: 8px;
 }
 
-/* ドットボタンの見た目 */
+
 .slick-dots li button {
     font-size: 0;
-    /* ← これ重要！文字が見えないようにする */
     line-height: 0;
     width: 8px;
     height: 8px;
@@ -308,7 +305,7 @@
     cursor: pointer;
 }
 
-/* アクティブなドット */
+
 .slick-dots li.slick-active button {
     background-color: v.$c-d-green;
 }
@@ -524,7 +521,6 @@
 
 .contact {
     position: relative;
-    // width: 100%;
 
     @include m.mq(pc) {
         margin: 0 auto;
