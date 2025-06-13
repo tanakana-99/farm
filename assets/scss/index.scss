@@ -50,7 +50,7 @@
     &__btn {
         position: absolute;
         right: 4.3%;
-        top: 23px;
+        top: 25px;
         display: block;
         width: 24px;
         height: 18px;
@@ -71,15 +71,16 @@
     }
 
     &__bar:not(:last-child) {
-        margin-bottom: 8px;
+        margin-bottom: 7px;
     }
 
     &__list {
 
         @include m.mq(pc) {
             display: flex;
-            column-gap: 31px;
-            margin-top: 3px;
+            column-gap: 38px;
+            margin-top: 7px;
+            margin-right: 7px;
         }
 
         li {
@@ -92,7 +93,7 @@
                 padding: 0;
                 font-size: 16px;
                 font-weight: bold;
-                letter-spacing: 1px;
+                letter-spacing: 0.3px;
             }
         }
     }
@@ -111,8 +112,8 @@
         max-width: 1400px;
         margin: 0 auto;
         padding: 0;
-        top: 1.6%;
-        left: 0;
+        top: 1.5%;
+        left: 0.4%;
     }
 
     &__inner {
@@ -176,6 +177,7 @@
         @include m.mq(pc) {
             font-size: 40px;
             margin-bottom: 0;
+            flex: 1;
         }
     }
 
@@ -190,6 +192,7 @@
             margin-bottom: 0;
             padding: 0;
             padding-top: 22px;
+            flex: 1;
         }
     }
 
@@ -210,6 +213,7 @@
     font-size: 16px;
     font-family: Montserrat, sans-serif;
     padding-top: 49px;
+    padding-bottom: 2px;
 
     @include m.mq(pc) {
         font-size: 20px;
@@ -220,7 +224,7 @@
 .title-ja {
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 26px;
+    margin-bottom: 24px;
     line-height: 1;
     letter-spacing: 0;
 
@@ -230,8 +234,30 @@
     }
 }
 
+.news .title-ja {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 23px;
+    line-height: 1;
+    letter-spacing: 0;
+
+    @include m.mq(pc) {
+        font-size: 28px;
+        margin-bottom: 32px;
+    }
+
+}
+
+.features .title-en {
+    @include m.mq(pc) {
+        font-size: 20px;
+        padding: 56px 0 7px;
+    }
+}
+
+
 .features .title-ja {
-    font-size: 19px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 25px;
     line-height: 1;
@@ -240,6 +266,15 @@
     @include m.mq(pc) {
         font-size: 28px;
         margin-bottom: 32px;
+        letter-spacing: 0.2px;
+    }
+}
+
+.case .title-ja {
+
+    @include m.mq(pc) {
+        font-size: 28px;
+        margin-bottom: 13px;
     }
 }
 
@@ -279,7 +314,7 @@
 
     &__inner {
         background-color: rgba(255, 255, 255, 0.9);
-        padding: 4% 7% 4% 6%;
+        padding: 4% 7% 4.1% 6%;
         border-radius: 32px;
         box-shadow: 0 0 24px rgba(0, 0, 0, 0.25);
         max-width: 92.3076%;
@@ -290,6 +325,7 @@
             position: relative;
             max-width: 415px;
             padding: 0;
+            box-shadow: none;
         }
     }
 
@@ -304,7 +340,8 @@
 
         @include m.mq(pc) {
             font-size: 20px;
-            margin-bottom: 6.5%;
+            margin-bottom: 5.7%;
+            margin-top: -1.2%;
         }
     }
 
@@ -331,12 +368,13 @@
 .features {
 
     padding: 0 4.1025% 0 4.1025%;
-    margin-bottom: 2px;
+    margin-bottom: 0;
     background-color: #f3f9f6;
     padding-bottom: 54px;
 
     @include m.mq(pc) {
         padding-bottom: 64px;
+        margin-bottom: 2px;
     }
 
 
@@ -345,7 +383,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        row-gap: 16px;
+        row-gap: 17px;
 
         @include m.mq(pc) {
             width: 100%;
@@ -371,7 +409,7 @@
         font-weight: bold;
         background-color: #fff;
         border-radius: 0 0 24px 24px;
-        padding: 13px 16px 16px 16px;
+        padding: 11px 16px 17px 16px;
         line-break: anywhere;
 
         @include m.mq(pc) {
@@ -393,6 +431,7 @@
 
     @include m.mq(pc) {
         padding: 0;
+        margin-bottom: 64px;
     }
 
 
@@ -404,6 +443,7 @@
         @include m.mq(pc) {
             max-width: 1100px;
             margin: 0 auto;
+            row-gap: 36px;
         }
     }
 
@@ -414,8 +454,9 @@
         background-color: v.$c-green;
         border-radius: 24px;
         height: 140px;
-        padding: 45px 55px 45px 45px;
+        padding: 0px 10.363% 0px 6.5698%;
         column-gap: 17px;
+        line-break: anywhere;
 
         @include m.mq(pc) {
             height: 185px;
@@ -432,15 +473,15 @@
         background-color: v.$c-green;
         border-radius: 24px;
         height: 140px;
-        padding: 45px 55px 45px 45px;
+        padding: 0px 15.363% 0px 6.5698%;
         column-gap: 17px;
         white-space: wrap;
 
         @include m.mq(pc) {
             height: 185px;
-            padding: 45px 55px 45px 45px;
+            padding: 0px 9.363% 0px 2.5698%;
             flex-direction: row;
-            column-gap: 20px;
+            column-gap: 31px;
             width: 47.727%;
         }
     }
@@ -451,31 +492,55 @@
         }
     }
 
+    &__item-02 {
+        display: flex;
+        align-items: center;
+        background-color: v.$c-green;
+        border-radius: 24px;
+        height: 140px;
+        padding: 0px 14.363% 0px 0.5698%;
+        column-gap: 6%;
+        justify-content: center;
+
+        @include m.mq(pc) {
+            height: 185px;
+            padding: 0px 8.363% 0px 2.5698%;
+            flex-direction: row;
+            column-gap: 31px;
+            width: 47.727%;
+        }
+    }
+
     &__image {
         @include m.mq(pc) {
-            width: 50%;
+            width: 37%;
             height: auto;
         }
     }
 
     &_pc-01 {
         border-radius: 50%;
+        max-width: none;
     }
 
     &_pc-02 {
         border-radius: 50%;
+        max-width: none;
     }
 
     &_pc-03 {
         border-radius: 50%;
+        max-width: none;
     }
 
     &_pc-04 {
         border-radius: 50%;
+        max-width: none;
     }
 
     &_pc-05 {
         border-radius: 50%;
+        max-width: none;
     }
 
     &__name {
@@ -486,6 +551,7 @@
         @include m.mq(pc) {
             font-size: 24px;
             text-align: left;
+            line-break: anywhere;
         }
     }
 
@@ -503,6 +569,14 @@
     &__name-01:hover {
         @include m.mq(pc) {
             color: v.$c-d-green;
+        }
+    }
+
+    &__name-02 {
+        display: block;
+
+        @include m.mq(pc) {
+            display: inline;
         }
     }
 
@@ -538,9 +612,16 @@
         .intro__item {
             @include m.mq(pc) {
                 flex: 1 1 calc((100% - 100px) / 3);
-                padding: 16px;
+                padding: 1% 2.7% 1% 2%;
                 text-align: center;
-                height: 185px;
+                height: 152px;
+                column-gap: 10%;
+            }
+        }
+
+        .intro__name {
+            @include m.mq(pc) {
+                font-size: 20px;
             }
         }
     }
@@ -553,7 +634,7 @@
     padding-bottom: 50px;
 
     @include m.mq(pc) {
-        padding-bottom: 64px;
+        padding: 0 7.1025% 48px 7.2025%;
     }
 
 
@@ -565,7 +646,7 @@
 
         @include m.mq(pc) {
             flex-direction: row;
-            column-gap: 30px;
+            column-gap: 0;
         }
     }
 
@@ -575,6 +656,12 @@
         @include m.mq(pc) {
             flex: 1 1 calc((100% - 60px) / 3);
             padding: 16px;
+        }
+    }
+
+    &__item:first-child {
+        @include m.mq(pc) {
+            padding-bottom: 40px;
         }
     }
 
@@ -610,6 +697,12 @@
     &__item {
         border-bottom: solid 2px #ddd;
         padding: 14px 0 9px;
+
+        @include m.mq(pc) {
+            display: flex;
+            padding: 11px 0 11px;
+            align-items: center;
+        }
     }
 
     &__item:nth-child(1) {
@@ -630,6 +723,7 @@
 
         @include m.mq(pc) {
             font-size: 14px;
+            width: 90px;
         }
     }
 
@@ -644,6 +738,10 @@
         color: #fff;
         background-color: v.$c-brown;
         border-radius: 4px;
+
+        @include m.mq(pc) {
+            margin-right: 24px;
+        }
     }
 
     &__title {
@@ -672,11 +770,15 @@
         align-items: center;
         height: 68px;
 
+        @include m.mq(pc) {
+            margin: 29px auto 0;
+        }
+
         &-box {
             margin-bottom: 61px;
 
             @include m.mq(pc) {
-                margin-bottom: 64px;
+                margin-bottom: 67px;
             }
         }
     }
@@ -707,7 +809,7 @@
     &__list {
         font-size: 13px;
         color: #fff;
-        letter-spacing: 1.1px;
+        letter-spacing: 0.3px;
         margin-left: 2px;
 
         & a {
@@ -716,10 +818,19 @@
 
         @include m.mq(pc) {
             font-size: 15px;
+            margin-left: 10px;
+            letter-spacing: 0px;
+            margin-right: 1px;
         }
     }
 
     &-line {
         margin-right: 3px;
+        font-size: large;
+
+        @include m.mq(pc) {
+            margin-right: 0;
+            font-size: x-large;
+        }
     }
 }

@@ -92,7 +92,7 @@ li {
 .burger-menu__btn {
   position: absolute;
   right: 4.3%;
-  top: 23px;
+  top: 25px;
   display: block;
   width: 24px;
   height: 18px;
@@ -111,13 +111,14 @@ li {
   background-color: #000;
 }
 .burger-menu__bar:not(:last-child) {
-  margin-bottom: 8px;
+  margin-bottom: 7px;
 }
 @media screen and (min-width: 768px) {
   .burger-menu__list {
     display: flex;
-    column-gap: 31px;
-    margin-top: 3px;
+    column-gap: 38px;
+    margin-top: 7px;
+    margin-right: 7px;
   }
 }
 .burger-menu__list li {
@@ -131,7 +132,7 @@ li {
     padding: 0;
     font-size: 16px;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 0.3px;
   }
 }
 
@@ -149,8 +150,8 @@ li {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0;
-    top: 1.6%;
-    left: 0;
+    top: 1.5%;
+    left: 0.4%;
   }
 }
 .header__inner {
@@ -213,6 +214,7 @@ li {
   .mv__title {
     font-size: 40px;
     margin-bottom: 0;
+    flex: 1;
   }
 }
 .mv__text {
@@ -227,6 +229,7 @@ li {
     margin-bottom: 0;
     padding: 0;
     padding-top: 22px;
+    flex: 1;
   }
 }
 .mv__image {
@@ -245,6 +248,7 @@ li {
   font-size: 16px;
   font-family: Montserrat, sans-serif;
   padding-top: 49px;
+  padding-bottom: 2px;
 }
 @media screen and (min-width: 768px) {
   .title-en {
@@ -256,7 +260,7 @@ li {
 .title-ja {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 26px;
+  margin-bottom: 24px;
   line-height: 1;
   letter-spacing: 0;
 }
@@ -267,8 +271,29 @@ li {
   }
 }
 
+.news .title-ja {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 23px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+@media screen and (min-width: 768px) {
+  .news .title-ja {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features .title-en {
+    font-size: 20px;
+    padding: 56px 0 7px;
+  }
+}
+
 .features .title-ja {
-  font-size: 19px;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 25px;
   line-height: 1;
@@ -278,6 +303,14 @@ li {
   .features .title-ja {
     font-size: 28px;
     margin-bottom: 32px;
+    letter-spacing: 0.2px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .case .title-ja {
+    font-size: 28px;
+    margin-bottom: 13px;
   }
 }
 
@@ -317,7 +350,7 @@ li {
 }
 .about__inner {
   background-color: rgba(255, 255, 255, 0.9);
-  padding: 4% 7% 4% 6%;
+  padding: 4% 7% 4.1% 6%;
   border-radius: 32px;
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.25);
   max-width: 92.3076%;
@@ -329,6 +362,7 @@ li {
     position: relative;
     max-width: 415px;
     padding: 0;
+    box-shadow: none;
   }
 }
 .about__text {
@@ -342,7 +376,8 @@ li {
 @media screen and (min-width: 768px) {
   .about__text {
     font-size: 20px;
-    margin-bottom: 6.5%;
+    margin-bottom: 5.7%;
+    margin-top: -1.2%;
   }
 }
 .about__image {
@@ -366,13 +401,14 @@ li {
 
 .features {
   padding: 0 4.1025% 0 4.1025%;
-  margin-bottom: 2px;
+  margin-bottom: 0;
   background-color: #f3f9f6;
   padding-bottom: 54px;
 }
 @media screen and (min-width: 768px) {
   .features {
     padding-bottom: 64px;
+    margin-bottom: 2px;
   }
 }
 .features__inner {
@@ -380,7 +416,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 16px;
+  row-gap: 17px;
 }
 @media screen and (min-width: 768px) {
   .features__inner {
@@ -405,7 +441,7 @@ li {
   font-weight: bold;
   background-color: #fff;
   border-radius: 0 0 24px 24px;
-  padding: 13px 16px 16px 16px;
+  padding: 11px 16px 17px 16px;
   line-break: anywhere;
 }
 @media screen and (min-width: 768px) {
@@ -426,6 +462,7 @@ li {
 @media screen and (min-width: 768px) {
   .intro {
     padding: 0;
+    margin-bottom: 64px;
   }
 }
 .intro__box {
@@ -437,6 +474,7 @@ li {
   .intro__box {
     max-width: 1100px;
     margin: 0 auto;
+    row-gap: 36px;
   }
 }
 .intro__item {
@@ -446,8 +484,9 @@ li {
   background-color: #09947b;
   border-radius: 24px;
   height: 140px;
-  padding: 45px 55px 45px 45px;
+  padding: 0px 10.363% 0px 6.5698%;
   column-gap: 17px;
+  line-break: anywhere;
 }
 @media screen and (min-width: 768px) {
   .intro__item {
@@ -464,16 +503,16 @@ li {
   background-color: #09947b;
   border-radius: 24px;
   height: 140px;
-  padding: 45px 55px 45px 45px;
+  padding: 0px 15.363% 0px 6.5698%;
   column-gap: 17px;
   white-space: wrap;
 }
 @media screen and (min-width: 768px) {
   .intro__item-01 {
     height: 185px;
-    padding: 45px 55px 45px 45px;
+    padding: 0px 9.363% 0px 2.5698%;
     flex-direction: row;
-    column-gap: 20px;
+    column-gap: 31px;
     width: 47.727%;
   }
 }
@@ -482,26 +521,50 @@ li {
     background-color: #dffaec;
   }
 }
+.intro__item-02 {
+  display: flex;
+  align-items: center;
+  background-color: #09947b;
+  border-radius: 24px;
+  height: 140px;
+  padding: 0px 14.363% 0px 0.5698%;
+  column-gap: 6%;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .intro__item-02 {
+    height: 185px;
+    padding: 0px 8.363% 0px 2.5698%;
+    flex-direction: row;
+    column-gap: 31px;
+    width: 47.727%;
+  }
+}
 @media screen and (min-width: 768px) {
   .intro__image {
-    width: 50%;
+    width: 37%;
     height: auto;
   }
 }
 .intro_pc-01 {
   border-radius: 50%;
+  max-width: none;
 }
 .intro_pc-02 {
   border-radius: 50%;
+  max-width: none;
 }
 .intro_pc-03 {
   border-radius: 50%;
+  max-width: none;
 }
 .intro_pc-04 {
   border-radius: 50%;
+  max-width: none;
 }
 .intro_pc-05 {
   border-radius: 50%;
+  max-width: none;
 }
 .intro__name {
   font-size: 18px;
@@ -512,6 +575,7 @@ li {
   .intro__name {
     font-size: 24px;
     text-align: left;
+    line-break: anywhere;
   }
 }
 .intro__name-01 {
@@ -528,6 +592,14 @@ li {
 @media screen and (min-width: 768px) {
   .intro__name-01:hover {
     color: #168352;
+  }
+}
+.intro__name-02 {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .intro__name-02 {
+    display: inline;
   }
 }
 .intro__row-large {
@@ -562,9 +634,15 @@ li {
 @media screen and (min-width: 768px) {
   .intro__row-small .intro__item {
     flex: 1 1 calc((100% - 100px) / 3);
-    padding: 16px;
+    padding: 1% 2.7% 1% 2%;
     text-align: center;
-    height: 185px;
+    height: 152px;
+    column-gap: 10%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .intro__row-small .intro__name {
+    font-size: 20px;
   }
 }
 
@@ -575,7 +653,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .case {
-    padding-bottom: 64px;
+    padding: 0 7.1025% 48px 7.2025%;
   }
 }
 .case__inner {
@@ -587,7 +665,7 @@ li {
 @media screen and (min-width: 768px) {
   .case__inner {
     flex-direction: row;
-    column-gap: 30px;
+    column-gap: 0;
   }
 }
 .case__item {
@@ -597,6 +675,11 @@ li {
   .case__item {
     flex: 1 1 calc((100% - 60px) / 3);
     padding: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .case__item:first-child {
+    padding-bottom: 40px;
   }
 }
 .case img {
@@ -628,6 +711,13 @@ li {
   border-bottom: solid 2px #ddd;
   padding: 14px 0 9px;
 }
+@media screen and (min-width: 768px) {
+  .news__item {
+    display: flex;
+    padding: 11px 0 11px;
+    align-items: center;
+  }
+}
 .news__item:nth-child(1) {
   border-top: solid 2px #ddd;
 }
@@ -645,6 +735,7 @@ li {
 @media screen and (min-width: 768px) {
   .news__date {
     font-size: 14px;
+    width: 90px;
   }
 }
 .news__label {
@@ -658,6 +749,11 @@ li {
   color: #fff;
   background-color: #473221;
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .news__label {
+    margin-right: 24px;
+  }
 }
 .news__title {
   display: block;
@@ -685,12 +781,17 @@ li {
   align-items: center;
   height: 68px;
 }
+@media screen and (min-width: 768px) {
+  .news__btn {
+    margin: 29px auto 0;
+  }
+}
 .news__btn-box {
   margin-bottom: 61px;
 }
 @media screen and (min-width: 768px) {
   .news__btn-box {
-    margin-bottom: 64px;
+    margin-bottom: 67px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -717,7 +818,7 @@ li {
 .footer__list {
   font-size: 13px;
   color: #fff;
-  letter-spacing: 1.1px;
+  letter-spacing: 0.3px;
   margin-left: 2px;
 }
 .footer__list a {
@@ -726,8 +827,18 @@ li {
 @media screen and (min-width: 768px) {
   .footer__list {
     font-size: 15px;
+    margin-left: 10px;
+    letter-spacing: 0px;
+    margin-right: 1px;
   }
 }
 .footer-line {
   margin-right: 3px;
+  font-size: large;
+}
+@media screen and (min-width: 768px) {
+  .footer-line {
+    margin-right: 0;
+    font-size: x-large;
+  }
 }

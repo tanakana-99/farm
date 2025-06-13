@@ -117,7 +117,7 @@ li {
 @media screen and (min-width: 768px) {
   .burger-menu__list {
     display: flex;
-    column-gap: 17px;
+    column-gap: 38px;
   }
 }
 .burger-menu__list li {
@@ -131,7 +131,7 @@ li {
     padding: 0;
     font-size: 16px;
     font-weight: bold;
-    letter-spacing: 1.8px;
+    letter-spacing: 0;
   }
 }
 
@@ -145,7 +145,7 @@ li {
   position: fixed;
   top: 0;
   right: 0;
-  left: 0;
+  left: 4%;
   background-color: #fff;
 }
 @media screen and (min-width: 768px) {
@@ -155,6 +155,7 @@ li {
     margin: 0 auto;
     padding: 0;
     z-index: 1;
+    left: 0;
   }
 }
 .header__inner {
@@ -164,12 +165,12 @@ li {
   height: 53px;
 }
 @media screen and (min-width: 768px) {
-  .header {
+  .header__inner {
     justify-content: space-between;
-    width: 84%;
+    width: 83.5%;
     margin: 0 auto;
     margin-top: 29px;
-    height: 50px;
+    height: 49px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -228,15 +229,20 @@ li {
   text-align: end;
   margin-bottom: 26px;
   font-size: 12px;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.4px;
 }
 @media screen and (min-width: 768px) {
   .info {
     margin: 18px auto 50px;
     max-width: 1200px;
     padding: 0;
-    letter-spacing: 0.5px;
+    letter-spacing: 0;
   }
+}
+
+.info-arrow {
+  margin-right: 2px;
+  margin-left: 3px;
 }
 
 .price {
@@ -347,6 +353,11 @@ li {
   border: 2px solid;
   border-image: linear-gradient(to right, #168352 0%, #168352 14%, #ddd 14%, #ddd 100%) 1;
   margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .title-box {
+    border-image: linear-gradient(to right, #168352 0%, #168352 12.2%, #ddd 12.2%, #ddd 100%) 1;
+  }
 }
 
 .features {
@@ -487,7 +498,7 @@ li {
 @media screen and (min-width: 768px) {
   .spec__sub {
     font-size: 24px;
-    margin-bottom: 33px;
+    margin-bottom: 26px;
   }
 }
 .spec-table {
@@ -497,7 +508,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .spec-table {
-    margin-bottom: 65px;
+    margin-bottom: 70px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -522,8 +533,8 @@ li {
 }
 @media screen and (min-width: 768px) {
   .label-name {
-    width: 25%;
-    padding: 10px 0 25px 21px;
+    width: 28%;
+    padding: 15px 0 20px 21px;
   }
 }
 
@@ -536,7 +547,7 @@ li {
 @media screen and (min-width: 768px) {
   .value {
     width: 75%;
-    padding: 7px 0 13px 37px;
+    padding: 14px 0 14px 21px;
   }
 }
 
@@ -583,7 +594,7 @@ li {
 @media screen and (min-width: 768px) {
   .contact__btn-box {
     width: 390px;
-    bottom: 42%;
+    bottom: 41%;
     left: 36%;
   }
 }
@@ -611,5 +622,18 @@ li {
 @media screen and (min-width: 768px) {
   .footer__list {
     font-size: 15px;
+    letter-spacing: -1px;
+  }
+}
+.footer-line {
+  margin-right: 2px;
+  margin-left: 5px;
+  font-size: large;
+}
+@media screen and (min-width: 768px) {
+  .footer-line {
+    margin-left: 14px;
+    margin-right: 0px;
+    font-size: 24px;
   }
 }

@@ -31,6 +31,7 @@
         background-color: #fff;
         justify-content: flex-end;
         height: auto;
+        margin-right: 5px;
     }
 
     a {
@@ -79,7 +80,8 @@
 
         @include m.mq(pc) {
             display: flex;
-            column-gap: 40px;
+            column-gap: 33px;
+            margin-top: 9px;
         }
 
         li {
@@ -92,7 +94,7 @@
                 padding: 0;
                 font-size: 16px;
                 font-weight: bold;
-                letter-spacing: 1.8px;
+                letter-spacing: 0.5px;
             }
         }
     }
@@ -119,6 +121,8 @@
         max-width: 1400px;
         margin: 0 auto;
         padding: 0;
+        top: 1.8%;
+        left: 0.2%;
     }
 
     &__inner {
@@ -131,6 +135,12 @@
             justify-content: space-between;
             width: 84%;
             margin: 0 auto;
+        }
+    }
+
+    &__title {
+        @include m.mq(pc) {
+            width: 100%;
         }
     }
 
@@ -157,6 +167,8 @@
             margin: 0 auto;
             max-width: 1200px;
             position: relative;
+            margin-top: 154px;
+            padding: 0;
         }
     }
 
@@ -185,19 +197,30 @@
     letter-spacing: 0.2px;
 
     @include m.mq(pc) {
-        margin: 24px auto 40px;
+        margin: 19px auto 60px;
         max-width: 1200px;
+        padding: 0;
+        letter-spacing: 0;
     }
 
     &-arrow {
         margin-left: 5.6px;
+
+        @include m.mq(pc) {
+            margin-left: 6.6px;
+        }
     }
 }
 
 .qa {
     padding: 0 3.846% 0 4.333%;
     padding-bottom: 15px;
-    margin-bottom: 140px;
+    margin-bottom: 130px;
+
+    @include m.mq(pc) {
+        padding: 0;
+        margin-bottom: 73px;
+    }
 
     &__title {
         font-size: 30px;
@@ -230,56 +253,96 @@
         font-size: 11px;
         border: solid 1px v.$c-d-green;
         border-radius: 4px;
-        width: 100px;
+        min-width: 100px;
+        white-space: nowrap;
         display: flex;
         align-items: center;
         justify-content: center;
         height: 24px;
-        margin-top: 9px;
+        outline: 1px solid orange;
+        line-height: 1;
     }
 
     &__item {
         border: solid 1px #ccc;
         border-radius: 16px;
-        margin-bottom: 25px;
-        line-height: 1.75;
+        margin-bottom: 24.3px;
+        // line-height: 1.75;
         line-break: anywhere;
+        outline: 1px solid red;
+
+        @include m.mq(pc) {
+            margin-bottom: 26.4px;
+        }
     }
 
     &__question {
-        line-height: 1.5;
+        line-height: normal;
+        margin: 0;
     }
 
 
     &__icon {
         font-size: 23px;
         margin-right: 22px;
-        margin-top: 18px;
+
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
     }
 
     &__answer {
-        padding-left: 24px;
-        padding-right: 25px;
-        padding-bottom: 15px;
-        letter-spacing: 0.1px;
+        padding: 1.6px 22px 16px 25px;
+        letter-spacing: 0;
+
+        @include m.mq(pc) {
+            padding: 16px 29px 16px 32px;
+        }
+    }
+
+    &__answer-last {
+        padding: 10px 22px 16px 25px;
+        letter-spacing: 0;
+
+        @include m.mq(pc) {
+            padding: 17px 22px 16px 32px;
+        }
     }
 }
 
 .label-flex {
     display: flex;
     column-gap: 8px;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 .q-mark {
     margin-right: 17px;
+    font-weight: bold;
+    line-height: 1;
+    display: flex;
+    align-items: flex-start;
+
+    @include m.mq(pc) {
+        font-size: 24px;
+        margin-right: 14px;
+    }
 }
 
 .q-top {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding-left: 22px;
-    margin-bottom: -2px;
+    padding-top: 24px;
+    width: 94%;
+
+    @include m.mq(pc) {
+        padding-left: 31px;
+        padding-top: 22px;
+        width: 96.3%;
+        padding-bottom: 9px;
+    }
 }
 
 .mark-q {
@@ -287,19 +350,29 @@
     font-weight: bold;
     font-family: Montserrat, sans-serif;
     color: v.$c-d-green;
-    margin-top: 13px;
     display: flex;
+    outline: 1px dashed blue;
+    display: flex;
+    align-items: flex-start;
+    /* ← 中央揃えにする */
+    min-height: 24px;
+    /* ← 高さを確保してズレを防ぐ */
+
+    @include m.mq(pc) {
+        margin-top: 0;
+    }
 }
 
 .accrdion-q {
     font-size: 16px;
     font-weight: bold;
-    padding-left: 64px;
-    padding-right: 61px;
-    padding-bottom: 7px;
+    margin: 0 auto;
+    max-width: 63%; // ← 18% + 19% の代わり
+    line-height: 1.75;
 
     @include m.mq(pc) {
         font-size: 18px;
+        max-width: 82%;
     }
 }
 
@@ -325,13 +398,26 @@
     &__list {
         font-size: 13px;
         color: #fff;
+        letter-spacing: 0;
 
         & a {
             color: #fff;
         }
 
         @include m.mq(pc) {
-            font-size: 15px;
+            font-size: 14px;
+        }
+    }
+
+    &-line {
+        margin-right: 2px;
+        margin-left: 5px;
+        font-size: large;
+
+        @include m.mq(pc) {
+            margin-left: 8px;
+            margin-right: 0px;
+            font-size: 21px;
         }
     }
 }
