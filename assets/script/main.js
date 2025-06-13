@@ -41,15 +41,3 @@ if (!$('.gallery__box').hasClass('slick-initialized')) {
         autoplay: false
     });
 }
-
-// // ホバー切り替え
-// $('.intro__name-01').hover(
-//     function () {
-//         // マウスが乗ったとき
-//         $(this).text('ロボット技術');
-//     },
-//     function () {
-//         // マウスが離れたとき
-//         $(this).text('エネルギーセイバー農業ドローン');
-//     }
-// );

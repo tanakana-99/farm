@@ -277,8 +277,13 @@ li {
   }
 }
 .qa__box {
-  max-width: 800px;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .qa__box {
+    padding: 0 14px;
+    max-width: 828px;
+  }
 }
 .qa__label {
   color: #168352;

@@ -244,8 +244,12 @@
     }
 
     &__box {
-        max-width: 800px;
         margin: 0 auto;
+
+        @include m.mq(pc) {
+            padding: 0 14px;
+            max-width: 828px;
+        }
     }
 
     &__label {
